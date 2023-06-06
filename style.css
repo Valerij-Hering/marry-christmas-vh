@@ -1,0 +1,216 @@
+
+
+* {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.wer {
+    position: absolute;
+    z-index: -2;
+}
+
+body {
+    background: #1f2335;
+    background-image: url(fonstola.ru_414555.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#particles-js {
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+h1 {
+    font-size: 80px;
+    color: #fff;
+    text-shadow: -1px 0 1px #505050, 0 1px 1px #505050, 5px 5px 20px rgba(255, 255, 255, 0.4), -5px -5px 20px rgba(255, 255, 255, 0.4);
+}
+
+
+.marryCristmas {
+    font-size: 80px;
+    color: #fff;
+    text-shadow: -1px 0 1px #505050, 0 1px 1px #505050, 5px 5px 20px rgba(255, 255, 255, 0.4), -5px -5px 20px rgba(255, 255, 255, 0.4);
+}
+
+.block {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 40px;
+    justify-content: flex-end;
+}
+
+h3 {
+    font-size: 30px;
+    color: #fff; 
+    font-weight: 200;
+    text-shadow: -1px 0 1px #505050, 0 1px 1px #505050, 5px 5px 20px rgba(255, 255, 255, 0.4), -5px -5px 20px rgba(255, 255, 255, 0.4);
+
+
+    /* color: #cfc09f;
+    text-shadow: -1px 0 1px #505050, 0 1px 1px #505050; */
+}
+h4 {
+  padding:10px;
+    font-size: 70px;
+    color: #fff; 
+    font-weight: 200;
+    text-shadow: -1px 0 1px #505050, 0 1px 1px #505050, 5px 5px 20px rgba(255, 255, 255, 0.4), -5px -5px 20px rgba(255, 255, 255, 0.4);
+    /* color: #cfc09f;
+    text-shadow: -1px 0 1px #505050, 0 1px 1px #505050; */
+
+}
+
+
+
+
+.playerPosition {
+    width: 53%;
+    margin-bottom: 10px;
+    
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progressBar {
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    text-shadow: -1px 0 1px #505050, 0 1px 1px #505050;
+}
+
+.progress {
+    background-color: #9e8ffd;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    transition: width 0.1s linear;
+}
+
+
+
+.songName {
+    color: #fff;
+    font-size: 25px;
+    margin: 10px;
+    text-shadow: -1px 0 1px #505050, 0 1px 1px #505050;
+}
+
+
+
+.prev, .next, .play {
+    cursor: pointer;
+    background-color: #50505000;
+    border: none;
+    font-size: 20px;
+    margin: 10px;
+    color: #fff;
+    text-shadow: -1px 0 1px #505050, 0 1px 1px #505050;
+  
+}
+
+
+
+
+@media all and (max-width: 800px) {
+
+    
+    h1 {
+        font-size: 60px;
+    }
+
+    .songName {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .block {
+        margin: 30px;
+    }
+}
+
+@media all and (max-width: 500px) {
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+  .container {
+      padding:10px;
+    }
+    h1 {
+        font-size: 47px;
+      text-align: center;
+    }
+
+    h4 {
+        font-size:40px;
+
+    }
+
+    h3 {
+        
+        font-size: 17px;
+    }
+
+    .block {
+        margin: 10px;
+    }
+
+    .songName {
+        font-size: 20px;
+    }
+
+    .playerPosition {
+        width: 90%;
+    }
+
+    .prev, .next, .play  {
+        font-size: 20px;
+    }
+}
